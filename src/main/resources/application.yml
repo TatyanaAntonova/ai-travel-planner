@@ -3,24 +3,17 @@ spring:
     name: ai-travel-planner
   jpa:
     open-in-view: false
-    database: postgresql
   datasource:
     url: ${JDBC_DATABASE_URL:}
     username: ${JDBC_DATABASE_USERNAME:}
     password: ${JDBC_DATABASE_PASSWORD:}
+  flyway:
+    locations: classpath:db/migration
   ai:
     openai:
       api-key: ${SPRING_AI_OPENAI_API_KEY:}
-
-springdoc:
-  api-docs:
-    path: /v3/api-docs
-  swagger-ui:
-    path: /swagger-ui.html
 
 vaadin:
   launch-browser: true
   frontend:
     hotdeploy: true
-  devmode:
-    hosts-allowed: [ 'localhost' ]

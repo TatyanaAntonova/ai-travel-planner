@@ -41,3 +41,7 @@ out/
 .kotlin
 .env
 /src/main/frontend/generated
+
+vite.generated.ts
+types.d.ts
+tsconfig.json
