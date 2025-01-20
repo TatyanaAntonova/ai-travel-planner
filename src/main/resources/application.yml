@@ -5,9 +5,12 @@ spring:
     open-in-view: false
     database: postgresql
   datasource:
-    url: ${JDBC_DATABASE_URL:jdbc:postgresql://localhost:5433/visionary}
-    username: ${JDBC_DATABASE_USERNAME:visionary}
-    password: ${JDBC_DATABASE_PASSWORD:visionary}
+    url: ${JDBC_DATABASE_URL:}
+    username: ${JDBC_DATABASE_USERNAME:}
+    password: ${JDBC_DATABASE_PASSWORD:}
+  ai:
+    openai:
+      api-key: ${SPRING_AI_OPENAI_API_KEY:}
 
 springdoc:
   api-docs:
