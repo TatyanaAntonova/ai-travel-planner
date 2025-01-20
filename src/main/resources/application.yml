@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: ai-travel-planner
+  jpa:
+    open-in-view: false
+    database: postgresql
+  datasource:
+    url: ${JDBC_DATABASE_URL:jdbc:postgresql://localhost:5433/visionary}
+    username: ${JDBC_DATABASE_USERNAME:visionary}
+    password: ${JDBC_DATABASE_PASSWORD:visionary}
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+
+vaadin:
+  launch-browser: true
+  frontend:
+    hotdeploy: true
+  devmode:
+    hosts-allowed: [ 'localhost' ]
