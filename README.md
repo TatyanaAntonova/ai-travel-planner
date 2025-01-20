@@ -34,3 +34,38 @@ Features and Services
 	•	Consolidates data from all services (e.g., weather, news, markets).
 	•	Generates a single daily report tailored to the user’s preferences.
 	•	AI Usage: Multi-source integration and customized reporting.
+
+Architecture and Tech Stack
+
+Frontend Options:
+	•	Vaadin: For a seamless integration with Spring Boot.
+	•	React/Angular/Vue: For a modern, responsive UI.
+
+Backend:
+	•	Spring Boot + Spring AI:
+	•	Manage APIs and AI integrations.
+	•	Connect AI tools like OpenAI or Hugging Face models for language tasks.
+
+Data Sources:
+	•	APIs for weather, currency exchange, and stock market data.
+	•	Optionally, store historical data in a database (MySQL/PostgreSQL).
+
+Database:
+	•	Relational DB: Store user preferences, historical data, and API logs.
+
+AI Tools:
+	•	Language Models: For summarizing and interpreting data (OpenAI GPT, Hugging Face).
+	•	Data Analysis: Use AI/ML to find patterns (if needed).
+
+Deployment:
+	•	Dockerize services and deploy them on a cloud provider like AWS or Google Cloud.
+
+Key Learning Areas
+	1.	AI Model Integration:
+	•	Practice how to consume, fine-tune, and deploy AI models via Spring AI.
+	2.	API Consumption:
+	•	Work with third-party APIs for real-world data.
+	3.	Modular Architecture:
+	•	Build each service independently for scalability and maintainability.
+	4.	Custom AI Prompts:
+	•	Experiment with AI prompts to tailor outputs for each service.
