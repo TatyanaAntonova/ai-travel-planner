@@ -1,0 +1,67 @@
+# General
+.DS_Store
+.idea/
+*.iml
+*.log
+*.bak
+*.tmp
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# Gradle
+.gradle/
+build/
+*.gradle.kts
+gradle-app.setting
+
+# IntelliJ
+.idea/
+*.iws
+*.ipr
+*.iml
+
+# VS Code
+.vscode/
+
+# Logs
+logs/
+*.log
+
+# Spring Boot
+.env
+*.env
+*.properties
+
+# Node.js / Vaadin
+node_modules/
+dist/
+build/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Docker
+*.war
+*.jar
+*.tar.gz
+*.dockerignore
+docker-compose.override.yml
+docker-compose.override.yaml
+
+# Temporary files
+*.swp
+*.swo
+*.class
+*.temp
+*.tmp
+
+# System files
+Thumbs.db
+Desktop.ini
